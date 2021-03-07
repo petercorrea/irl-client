@@ -1,10 +1,11 @@
 import React from "react";
 import Input from "../Input/Input";
 import Label from "../Label/Label";
+import styled from "styled-components";
 
 export default function NameInput() {
 	return (
-		<div>
+		<>
 			<Input
 				id="name"
 				name="name"
@@ -14,6 +15,6 @@ export default function NameInput() {
 				autoComplete="name"
 			/>
 			<Label htmlFor="name">name</Label>
-		</div>
+		</>
 	);
 }

@@ -14,7 +14,7 @@ let Wrapper = styled.div`
 let Selection = styled.li`
 	cursor: pointer;
 	border: 1px solid var(--inactive);
-	height: 30px;
+	height: var(--form-input-height);
 	padding: 10px;
 	border-radius: var(--border-radius);
 	height: fit-content;

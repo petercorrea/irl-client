@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 let ButtonContainer = styled.button`
 	color: var(--white);
-	width: 100px;
-	height: 50px;
+	width: 100%;
+	height: 40px;
 	background-color: var(--primary);
 	border: none;
 	border-radius: var(--border-radius);

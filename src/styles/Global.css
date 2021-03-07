@@ -6,16 +6,17 @@
 	--h3: 1rem;
 	--h4: 1rem;
 	--p: 1rem;
-	--a: 1rem;
+	--a: 0.8rem;
 	--button-text: 0.8rem;
 	--primary: black;
 	--black: black;
 	--white: white;
-	--border-radius: 8px;
+	--border-radius: 5px;
 	--hover-color: red;
 	--icons-size: 30px;
 	--active: black;
 	--inactive: rgb(177, 177, 177);
+	--form-input-height: 40px;
 }
 
 /* Global Reset */
@@ -29,7 +30,6 @@ html {
 	padding: 0px;
 	text-decoration: none;
 	display: block;
-	overflow-x: hidden;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
@@ -92,6 +92,8 @@ p {
 
 a {
 	font-size: var(--a);
+	color: var(--primary);
+	font-weight: 800;
 }
 
 /* Icons on hover */

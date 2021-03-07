@@ -2,15 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 let InputWrapper = styled.input`
-	width: 250px;
-	/* height: 40px; */
+	width: 100%;
+	height: var(--form-input-height);
 
 	border: 1px solid var(--inactive);
 	border-radius: var(--border-radius);
 	vertical-align: bottom;
 	font-size: 1.5rem;
-	margin-top: 20px;
-	margin-bottom: 20px;
 	padding: 10px;
 	cursor: pointer;
 
@@ -20,7 +18,7 @@ let InputWrapper = styled.input`
 
 	&:focus ~ label,
 	&:not(:placeholder-shown) ~ label {
-		transform: translate(0px, -25px) scale(0.8);
+		transform: translate(0px, -16px) scale(0.8);
 	}
 
 	&:focus ~ label {

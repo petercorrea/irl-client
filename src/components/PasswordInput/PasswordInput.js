@@ -4,7 +4,7 @@ import Label from "../Label/Label";
 
 export default function BirthdayInput() {
 	return (
-		<div>
+		<>
 			<Input
 				type="password"
 				id="password"
@@ -13,6 +13,6 @@ export default function BirthdayInput() {
 				placeholder=" "
 			></Input>
 			<Label htmlFor="password">password</Label>
-		</div>
+		</>
 	);
 }

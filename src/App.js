@@ -5,12 +5,11 @@ import "./styles/Global.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Guest from "./components/Guest/Guest";
-import Signup from "./components/Signup/Signup";
+import Login from "./components/Login/Login";
 import Protected from "./components/Protected/Protected";
 import MobileNavBar from "./components/MobileNavBar/MobileNavBar";
 import OnBoarding from "./components/Onboarding/Onboarding";
 import { AuthContext } from "./contexts/auth";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 library.add(faCaretDown);
@@ -41,7 +40,7 @@ const App = () => {
 						exact
 						render={() => {
 							if (!auth.loggedIn) {
-								return <Signup />;
+								return <Login />;
 							} else if (auth.loggedIn) {
 								return <Home />;
 							}
