@@ -1,0 +1,11 @@
+.login-button {
+	width: 100px;
+	height: auto;
+	border: 3px solid black;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	padding: 5px;
+	font-size: 1.2rem;
+	margin-left: 10px;
+}
