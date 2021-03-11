@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import CheckboxInput from "../CheckboxInput/CheckboxInput";
 
-let Wrapper = styled.div``;
+const Wrapper = styled.div``;
 
 export default function MultiCheckbox({ title, values }) {
-	let result = [];
+	const result = [];
 
 	for (let value of values) {
 		result.push(<CheckboxInput key={value} value={value} />);

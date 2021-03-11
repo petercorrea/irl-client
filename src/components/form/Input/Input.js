@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-let Wrapper = styled.input`
+const Wrapper = styled.input`
 	margin-bottom: 20px;
 	width: 100%;
 	max-width: 400px;

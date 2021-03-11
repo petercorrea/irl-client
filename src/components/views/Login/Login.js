@@ -7,12 +7,12 @@ import FlexRow from "../../elements/FlexRow/FlexRow";
 import FlexColumn from "../../elements/FlexColumn/FlexColumn";
 import { flexbox } from "styled-system";
 
-let Wrapper = styled.div`
+const Wrapper = styled.div`
 	min-height: 100%;
 	width: 100vw;
 `;
 
-let CenterWrapper = styled.div`
+const CenterWrapper = styled.div`
 	${flexbox}
 	display: flex;
 	flex-direction: row;

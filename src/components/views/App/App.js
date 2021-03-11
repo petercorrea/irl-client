@@ -14,8 +14,8 @@ import { AuthContext } from "../../../contexts/auth";
 // Views
 import Home from "../Home/Home";
 import Login from "../Login/Login";
-import Register1 from "../Register/Register";
-import Register2 from "../Register2/Register2";
+import RegisterStep1 from "../RegisterStep1/RegisterStep1";
+import RegisterStep2 from "../RegisterStep2/RegisterStep2";
 
 // Components
 import { ThemeProvider } from "styled-components";
@@ -34,7 +34,7 @@ const Application = styled.div`
 `;
 
 const App = () => {
-	let auth = useContext(AuthContext);
+	const auth = useContext(AuthContext);
 
 	return (
 		<ThemeProvider theme={theme}>
@@ -53,8 +53,8 @@ const App = () => {
 							}}
 						/>
 
-						<Route path="/register-step-1" exact component={Register1} />
-						<Route path="/register-step-2" exact component={Register2} />
+						<Route path="/register-step-1" exact component={RegisterStep1} />
+						<Route path="/register-step-2" exact component={RegisterStep2} />
 					</Switch>
 				</Router>
 			</Application>

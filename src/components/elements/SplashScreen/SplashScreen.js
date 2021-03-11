@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SplashImg from "../../../assets/SplashScreen.jpg";
 import { flexbox } from "styled-system";
 
-let Wrapper = styled.div`
+const Wrapper = styled.div`
 	${flexbox}
 
 	& img {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-let Wrapper = styled.div`
+const Wrapper = styled.div`
 	& .option-hidden {
 		display: none;
 	}
@@ -11,7 +11,7 @@ let Wrapper = styled.div`
 	position: relative;
 `;
 
-let Selection = styled.li`
+const Selection = styled.li`
 	cursor: pointer;
 	border: 1px solid var(--inactive);
 	height: var(--form-input-height);
@@ -22,21 +22,15 @@ let Selection = styled.li`
 	&:hover {
 		border: 1px solid var(--active);
 	}
-
-	/* & .caret {
-		pointer-events: none;
-		transform: rotate(0deg);
-		transition: transform 0.5s ease;
-	} */
 `;
 
-let OptionsContainer = styled.div`
+const OptionsContainer = styled.div`
 	border: 1px solid var(--inactive);
 	border-radius: var(--border-radius);
 	margin-top: 10px;
 `;
 
-let Option = styled.li`
+const Option = styled.li`
 	padding: 10px;
 	&:hover {
 		background-color: var(--active);
@@ -46,10 +40,10 @@ let Option = styled.li`
 `;
 
 export default function DropDown({ title, values }) {
-	let [currentSelection, setSelection] = useState(values[0]);
-	let [toggleOptions, setToggleOptions] = useState(false);
+	const [currentSelection, setSelection] = useState(values[0]);
+	const [toggleOptions, setToggleOptions] = useState(false);
 
-	let style1 = {
+	const style1 = {
 		pointerEvents: "none",
 		transform: "rotate(0deg)",
 		transition: "transform .5s ease",
@@ -58,7 +52,7 @@ export default function DropDown({ title, values }) {
 		top: "10",
 	};
 
-	let style2 = {
+	const style2 = {
 		pointerEvents: "none",
 		transform: "rotate(180deg)",
 		transition: "transform .5s ease",
@@ -80,7 +74,7 @@ export default function DropDown({ title, values }) {
 		});
 	}, []);
 
-	let options = [];
+	const options = [];
 	for (let value of values) {
 		options.push(
 			<Option

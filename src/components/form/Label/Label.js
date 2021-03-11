@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-let LabelWrapper = styled.label`
+const LabelWrapper = styled.label`
 	width: fit-content;
 	height: 20px;
 	color: ${(props) => props.theme.colors.hotPink};

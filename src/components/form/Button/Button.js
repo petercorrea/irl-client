@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { color, space, layout, typography } from "styled-system";
 
-let Wrapper = styled.button`
+const Wrapper = styled.button`
 	${color}
 	${space}
 	${typography}

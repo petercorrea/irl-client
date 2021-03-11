@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export let OnBoardingContext = createContext();
+export const OnBoardingContext = createContext();

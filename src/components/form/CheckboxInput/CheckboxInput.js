@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-let MainContainer = styled.div`
+const MainContainer = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -23,7 +23,7 @@ let MainContainer = styled.div`
 	}
 `;
 
-let CheckboxWrapper = styled.input`
+const CheckboxWrapper = styled.input`
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border: 1px solid var(--inactive);

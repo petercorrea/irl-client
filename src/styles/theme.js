@@ -39,13 +39,14 @@ const theme = {
 		h1: "3rem",
 	},
 	sizes: {
-		button: {
+		width: {
 			s: "150px",
 			m: "300px",
 			l: "350px",
 			xl: "400px",
 		},
 		height: {
+			shortButton: "40px",
 			button: "60px",
 			input: "60px",
 		},

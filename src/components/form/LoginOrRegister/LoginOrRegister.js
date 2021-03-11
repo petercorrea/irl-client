@@ -6,25 +6,25 @@ import { Link } from "react-router-dom";
 import { position, layout, space } from "styled-system";
 import LoginSVG from "../../../assets/login.svg";
 
-let H1 = styled.h1`
+const H1 = styled.h1`
 	font-size: ${(props) => props.theme.fontSizes.h1};
 	color: ${(props) => props.theme.colors.black};
 `;
 
-let P = styled.p`
+const P = styled.p`
 	margin-bottom: 80px;
 	font-size: 0.8rem;
 	color: ${(props) => props.theme.colors.black};
 `;
 
-let RegisterLink = styled(Link)`
+const RegisterLink = styled(Link)`
 	color: ${(props) => props.theme.colors.hotPink};
 	width: 100%;
 	text-align: center;
 	font-weight: bold;
 `;
 
-let Forgot = styled(Link)`
+const Forgot = styled(Link)`
 	color: ${(props) => props.theme.colors.hotPink};
 	width: 100%;
 	text-align: right;
@@ -32,7 +32,7 @@ let Forgot = styled(Link)`
 	font-weight: bold;
 `;
 
-let Wrapper = styled.div`
+const Wrapper = styled.div`
 	${position}
 	${space}
 	padding: ${(props) => props.theme.space.padding.container};
