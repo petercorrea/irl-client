@@ -5,7 +5,6 @@ import { flexbox } from "styled-system";
 
 let Wrapper = styled.div`
 	${flexbox}
-	height: 100%;
 
 	& img {
 		position: relative;

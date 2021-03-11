@@ -7,10 +7,9 @@ let Wrapper = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	position: absolute;
-	height: 100%;
-	width: 100%;
+	min-height: 100%;
 `;
 
 export default function FlexColumn({ children }) {
-	return <Wrapper className="peter">{children}</Wrapper>;
+	return <Wrapper className="flex-column">{children}</Wrapper>;
 }

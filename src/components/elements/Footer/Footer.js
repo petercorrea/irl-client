@@ -29,7 +29,7 @@ let Wrapper = styled.div`
 
 export default function Footer() {
 	return (
-		<Wrapper>
+		<Wrapper className="footer">
 			<ul>
 				<li>About</li>
 				<li>Contact</li>

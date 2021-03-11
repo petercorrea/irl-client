@@ -1,7 +1,21 @@
 /* Reset */
+html,
+body,
+#root,
+.App {
+	min-height: 550px;
+	height: 100vh;
+}
+
 html {
 	box-sizing: border-box;
-	height: 100%;
+}
+
+body {
+	width: 100vw;
+	overflow-x: hidden;
+	background-color: white;
+	margin: 0 auto;
 }
 
 * {
@@ -17,6 +31,7 @@ html {
 *::-webkit-scrollbar {
 	display: none;
 }
+
 * {
 	-ms-overflow-style: none; /* Hide scrollbar for IE, Edge and Firefox */
 	scrollbar-width: none;
@@ -30,16 +45,4 @@ html {
 script,
 head {
 	display: none;
-}
-
-body {
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	background-color: white;
-	margin: 0 auto;
 }

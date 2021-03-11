@@ -8,13 +8,7 @@ import FlexColumn from "../../elements/FlexColumn/FlexColumn";
 import { flexbox } from "styled-system";
 
 let Wrapper = styled.div`
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	/* min-height: 100vh; */
-	height: 100%;
+	min-height: 100%;
 	width: 100vw;
 `;
 

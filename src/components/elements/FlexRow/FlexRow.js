@@ -5,9 +5,10 @@ let Wrapper = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: stretch;
 	min-width: 100%;
 	flex-wrap: nowrap;
+	flex: 1 1 auto;
 	height: 100%;
 `;
 

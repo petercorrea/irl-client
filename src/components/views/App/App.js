@@ -28,14 +28,9 @@ library.add(faCaretDown);
 
 const Application = styled.div`
 	width: 100vw;
-	min-height: 100vh;
+	height: 100%;
 	overflow-x: hidden;
-	display: flex;
-	flex-direction: column;
-	justify-items: flex-start;
-	align-items: center;
 	background-color: ${(props) => props.theme.colors.sand};
-	position: relative;
 `;
 
 const App = () => {
@@ -43,7 +38,7 @@ const App = () => {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<Application className="comp-app">
+			<Application className="App">
 				<Router>
 					<Switch>
 						<Route
