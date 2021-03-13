@@ -7,18 +7,20 @@ const MainContainer = styled.div`
 	justify-content: flex-start;
 	align-items: center;
 	cursor: pointer;
-	width: fit-content;
+	width: ${(props) => props.theme.sizes.width.input};
+	margin-bottom: 10px;
+	border-radius: ${(props) => props.theme.radii.button};
 
 	& label {
 		cursor: pointer;
-		color: var(--inactive);
+		color: ${(props) => props.theme.colors.black};
+		font-size: ${(props) => props.theme.fontSizes.input};
 	}
 
 	&:hover label {
-		color: var(--active);
 	}
 	&:hover input {
-		border: 1px solid var(--active);
+		border: 2px solid ${(props) => props.theme.colors.hotPink};
 		cursor: pointer;
 	}
 `;
@@ -26,10 +28,10 @@ const MainContainer = styled.div`
 const CheckboxWrapper = styled.input`
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	border: 1px solid var(--inactive);
-	width: 20px;
-	height: 20px;
-	border-radius: 6px;
+	border: 2px solid ${(props) => props.theme.colors.hotPink};
+	width: 30px;
+	height: 30px;
+	border-radius: ${(props) => props.theme.radii.button};
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -43,9 +45,9 @@ const CheckboxWrapper = styled.input`
 			display: block;
 			position: absolute;
 			opacity: 1;
-			width: 5px;
-			height: 9px;
-			border: 2px solid white;
+			width: 8px;
+			height: 15px;
+			border: 2px solid ${(props) => props.theme.colors.white};
 			border-top: 0;
 			border-left: 0;
 			left: 7px;
@@ -54,12 +56,11 @@ const CheckboxWrapper = styled.input`
 		}
 	}
 	&:checked {
-		background-color: var(--active);
-		border: 1px solid var(--active);
+		background-color: ${(props) => props.theme.colors.hotPink};
+		border: 2px solid ${(props) => props.theme.colors.hotPink};
 	}
 
 	&:checked ~ label {
-		color: var(--active);
 	}
 
 	&:disabled {

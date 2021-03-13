@@ -13,7 +13,7 @@ export default function MultiCheckbox({ title, values }) {
 
 	return (
 		<Wrapper>
-			<h2>{title}</h2>
+			<h1>{title}</h1>
 			{result}
 		</Wrapper>
 	);

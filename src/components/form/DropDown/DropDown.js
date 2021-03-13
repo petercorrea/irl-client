@@ -7,34 +7,60 @@ const Wrapper = styled.div`
 		display: none;
 	}
 
+	& > h1 {
+		margin-bottom: 5px;
+	}
+
 	margin-bottom: 10px;
 	position: relative;
+	max-width: 300px;
+`;
+
+const DropDownWrapper = styled.div`
+	& .option-hidden {
+		display: none;
+	}
+
+	margin-bottom: 10px;
+	position: relative;
+	border-radius: ${(props) => props.theme.radii.button};
+
+	background-color: ${(props) => props.theme.colors.white};
 `;
 
 const Selection = styled.li`
 	cursor: pointer;
-	border: 1px solid var(--inactive);
-	height: var(--form-input-height);
+	height: ${(props) => props.theme.sizes.height.button};
 	padding: 10px;
-	border-radius: var(--border-radius);
+	border-radius: ${(props) => props.theme.radii.button};
+	font-size: ${(props) => props.theme.fontSizes.input};
 	height: fit-content;
+	border: 2px solid transparent;
 
 	&:hover {
-		border: 1px solid var(--active);
+		border: 2px solid ${(props) => props.theme.colors.hotPink};
 	}
 `;
 
 const OptionsContainer = styled.div`
-	border: 1px solid var(--inactive);
-	border-radius: var(--border-radius);
-	margin-top: 10px;
+	position: relative;
+	border: 2px solid ${(props) => props.theme.colors.hotPink};
+	border-radius: ${(props) => props.theme.radii.button};
+	margin-top: 0px;
+	background-color: ${(props) => props.theme.colors.white};
+	width: 100%;
+	z-index: 100;
 `;
 
 const Option = styled.li`
 	padding: 10px;
+	background-color: ${(props) => props.theme.colors.white};
+	border-radius: ${(props) => props.theme.radii.button};
+	font-size: ${(props) => props.theme.fontSizes.input};
+
 	&:hover {
-		background-color: var(--active);
-		color: var(--white);
+		background-color: ${(props) => props.theme.colors.hotPink};
+		color: ${(props) => props.theme.colors.white};
 		cursor: pointer;
 	}
 `;
@@ -98,9 +124,9 @@ export default function DropDown({ title, values }) {
 
 	return (
 		<Wrapper className={`${title}-dropdown`}>
-			<h2>{title}</h2>
+			<h1>{title}</h1>
 
-			<Wrapper>
+			<DropDownWrapper>
 				<Selection
 					key={currentSelection}
 					onClick={(e) => toggleMenu(e)}
@@ -112,7 +138,7 @@ export default function DropDown({ title, values }) {
 					icon="caret-down"
 					style={toggleOptions ? style2 : style1}
 				/>
-			</Wrapper>
+			</DropDownWrapper>
 
 			<OptionsContainer className={toggleOptions ? "" : "option-hidden"}>
 				{options}

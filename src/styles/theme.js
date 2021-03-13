@@ -37,6 +37,7 @@ const theme = {
 		title: "1.5rem",
 		info: ".8rem",
 		h1: "3rem",
+		input: "1rem",
 	},
 	sizes: {
 		width: {
@@ -44,11 +45,12 @@ const theme = {
 			m: "300px",
 			l: "350px",
 			xl: "400px",
+			input: "300px",
 		},
 		height: {
 			shortButton: "40px",
 			button: "60px",
-			input: "60px",
+			input: "40px",
 		},
 	},
 	space: {
